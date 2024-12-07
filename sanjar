@@ -1,0 +1,21 @@
+# python9_final
+
+class Car:
+    def init(self, name, price, model, city, year):
+        self.name = name
+        self.price = price
+        self.model = model
+        self.city = city
+        self.year = year
+
+    def show_info(self):
+        return f'{self.name}, {self.price}, {self.model}, {self.year}, Год выпуска: {self.city}'
+
+
+
+
+object1 = Car('BMW', 50000, 'm5', 'Bishkek', 2020)
+object2 = Car('Audi', 45000, 'R8', 'Naryn', 2017)
+
+
+print(object2.show_info())
